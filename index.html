@@ -3,13 +3,345 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site Super Rapide</title>
+    <title>Mon Passeport Stage - BTS SIO SLAM</title>
     <style>
-        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+        /* Styles CSS de base */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1, h2, h3 {
+            color: #1a4f76;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: none;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .info-box {
+            background-color: #eef5fa;
+            border: 1px solid #bce0fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* Styles des tableaux */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #1a4f76;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f4f4f4;
+        }
+
+        /* Styles des formulaires / zones de saisie */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        /* Page Enseignant */
+        .teacher-page {
+            margin-top: 50px;
+            border: 2px dashed #d9534f;
+            background-color: #fdf7f7;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .teacher-page h2 {
+            color: #d9534f;
+            border-bottom-color: #d9534f;
+        }
+
+        .alert-text {
+            color: #d9534f;
+            font-weight: bold;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <h1>🚀 Mon site est en ligne !</h1>
-    <p>Hébergé gratuitement sur GitHub Pages en 3 minutes.</p>
-</body>
-</html>
+
+<div class="container">
+    <h1>TP NOTÉ - MON PASSEPORT STAGE</h1>
+    <div class="subtitle">BTS SIO SLAM - 1ère Année - Bloc 1 Semestre 2</div>
+
+    <div class="info-box">
+        <p><strong>Durée :</strong> 2 heures</p>
+        <p><strong>Documents autorisés :</strong> GitHub personnel</p>
+        <p><strong>IA autorisée :</strong> avec déclaration obligatoire</p>
+        <p><em>Ce dossier sera ajouté à votre portfolio GitHub à la fin de la séance.</em></p>
+    </div>
+
+    <table>
+        <tr>
+            <th>Nom / Prénom</th>
+            <td><input type="text" value="Poulenard Alexandre" readonly></td>
+        </tr>
+        <tr>
+            <th>URL GitHub</th>
+            <td><input type="text" value="github.com/"></td>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td><input type="text" value="24/04/2026" readonly></td>
+        </tr>
+    </table>
+
+    <h2>Consignes générales</h2>
+    <ul>
+        <li>Vous pouvez utiliser votre GitHub et l'IA (Mistral, ChatGPT...).</li>
+        <li>Mais 6 points de ce TP ne peuvent venir que de vous : ils portent sur votre vécu réel du semestre.</li>
+        <li>Un dossier générique sans preuves personnelles ne peut pas dépasser 8/20.</li>
+        <li>Le rendu se fait via GitHub : créez un dossier <code>passeport-stage/</code> dans votre repo et committez votre fichier <code>passeport.md</code> avant la fin de la séance.</li>
+        <li>Ce dossier a une valeur réelle : vous pourrez le présenter en entretien de stage comme preuve de vos compétences.</li>
+    </ul>
+
+    <h2>Planning recommandé (2h)</h2>
+    <table>
+        <tr>
+            <th>Durée</th>
+            <th>Activité</th>
+            <th>Points</th>
+        </tr>
+        <tr><td>5 min</td><td>Auto-évaluation initiale (grille de positionnement)</td><td></td></tr>
+        <tr><td>20 min</td><td>Partie 1 - Analyse de l'entreprise DataNovA</td><td>/6</td></tr>
+        <tr><td>30 min</td><td>Partie 2 - Tableau de compétences + preuves GitHub</td><td>/6</td></tr>
+        <tr><td>15 min</td><td>Boîte noire : 3 questions sur votre vécu réel</td><td>/6</td></tr>
+        <tr><td>25 min</td><td>Partie 3 - Lettre de motivation technique</td><td>/4</td></tr>
+        <tr><td>5 min</td><td>Déclaration d'usage IA</td><td>/2</td></tr>
+        <tr><td>5 min</td><td>Relecture + dépôt GitHub (commit du dossier)</td><td></td></tr>
+        <tr><td>15 min</td><td>Auto-évaluation finale (même grille)</td><td></td></tr>
+    </table>
+
+    <h2>Auto-évaluation initiale</h2>
+    <table>
+        <tr>
+            <th>Compétence</th>
+            <th>À revoir</th>
+            <th>Acquis</th>
+            <th>Maîtrisé</th>
+        </tr>
+        <tr>
+            <td>Je sais versionner mon code avec Git / GitHub</td>
+            <td><input type="radio" name="comp1" value="revoir"></td>
+            <td><input type="radio" name="comp1" value="acquis"></td>
+            <td><input type="radio" name="comp1" value="maitrise" checked></td>
+        </tr>
+        <tr>
+            <td>Je connais les bases du RGPD (rôles, obligations)</td>
+            <td><input type="radio" name="comp2" value="revoir"></td>
+            <td><input type="radio" name="comp2" value="acquis" checked></td>
+            <td><input type="radio" name="comp2" value="maitrise"></td>
+        </tr>
+        <tr>
+            <td>Je sais identifier des risques dans une application</td>
+            <td><input type="radio" name="comp3" value="revoir"></td>
+            <td><input type="radio" name="comp3" value="acquis" checked></td>
+            <td><input type="radio" name="comp3" value="maitrise"></td>
+        </tr>
+        <tr>
+            <td>Je suis capable de décrire mon projet technique</td>
+            <td><input type="radio" name="comp4" value="revoir"></td>
+            <td><input type="radio" name="comp4" value="acquis" checked></td>
+            <td><input type="radio" name="comp4" value="maitrise"></td>
+        </tr>
+        <tr>
+            <td>Je peux écrire une lettre de motivation technique</td>
+            <td><input type="radio" name="comp5" value="revoir"></td>
+            <td><input type="radio" name="comp5" value="acquis" checked></td>
+            <td><input type="radio" name="comp5" value="maitrise"></td>
+        </tr>
+    </table>
+
+    <h2>Partie 1 — Analyse de l'entreprise DataNovA /6</h2>
+    <div class="info-box">
+        <h3>Contexte - Fiche entreprise</h3>
+        <p><strong>Entreprise :</strong> DataNovA SAS | <strong>Secteur :</strong> Santé numérique | <strong>Effectif :</strong> 38 salariés | <strong>Localisation :</strong> Lyon</p>
+        <p><strong>Activité :</strong> Plateforme SaaS de suivi patient pour cabinets médicaux</p>
+        <p><strong>Services informatiques :</strong></p>
+        <ul>
+            <li>Application web (React + Flask) hébergée sur serveur dédié OVH</li>
+            <li>Assistant IA intégré (Mistral) pour aide à la rédaction d'ordonnances</li>
+            <li>Base de données patients (nom, prénom, date de naissance, historique médical, numéro SS)</li>
+            <li>Accès pour 3 profils : médecin, secrétaire, administrateur</li>
+            <li>Équipe IT : 2 développeurs + 1 stagiaire BTS SIO SLAM (vous)</li>
+        </ul>
+        <p>La direction vous demande d'analyser ce service avant sa mise en production.</p>
+    </div>
+
+    <h3>Question 1.1 - Données et risques /4</h3>
+    <table>
+        <tr>
+            <th>Donnée traitée</th>
+            <th>Niveau de sensibilité</th>
+            <th>Justification</th>
+        </tr>
+        <tr>
+            <td>Nom et prénom</td>
+            <td>Normale</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Date de naissance</td>
+            <td>Normale</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Numéro SS</td>
+            <td>Sensible</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Historique médical</td>
+            <td>Très Sensible</td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+
+    <h3>Question 1.2 - Réglementations applicables /2</h3>
+    <table>
+        <tr>
+            <th>Réglementation</th>
+            <th>Pourquoi elle s'applique</th>
+            <th>Ce qu'elle impose concrètement</th>
+        </tr>
+        <tr>
+            <td>Réglementation 1 : <input type="text"></td>
+            <td><textarea></textarea></td>
+            <td><textarea></textarea></td>
+        </tr>
+        <tr>
+            <td>Réglementation 2 : <input type="text"></td>
+            <td><textarea></textarea></td>
+            <td><textarea></textarea></td>
+        </tr>
+    </table>
+
+    <h2>Partie 2 — Mes compétences & preuves GitHub /6</h2>
+    <table>
+        <tr>
+            <th>Compétence Bloc 1 (vue en cours)</th>
+            <th>Ce que je sais faire concrètement</th>
+            <th>Preuve dans mon GitHub (fichier / commit / repo)</th>
+        </tr>
+        <tr>
+            <td>Gérer le patrimoine informatique (Git, versionnage)</td>
+            <td><textarea placeholder="À compléter"></textarea></td>
+            <td><textarea placeholder="À compléter"></textarea></td>
+        </tr>
+        <tr>
+            <td>Mettre à disposition un service (Flask, déploiement)</td>
+            <td><textarea placeholder="À compléter"></textarea></td>
+            <td><textarea placeholder="À compléter"></textarea></td>
+        </tr>
+        <tr>
+            <td>Répondre à un incident / demande (procédure support)</td>
+            <td><textarea placeholder="À compléter"></textarea></td>
+            <td><textarea placeholder="À compléter"></textarea></td>
+        </tr>
+        <tr>
+            <td>Travailler en mode projet (Kanban, planification)</td>
+            <td><textarea placeholder="À compléter"></textarea></td>
+            <td><textarea placeholder="À compléter"></textarea></td>
+        </tr>
+        <tr>
+            <td>Organiser son développement prof. (veille, README)</td>
+            <td><textarea placeholder="À compléter"></textarea></td>
+            <td><textarea placeholder="À compléter"></textarea></td>
+        </tr>
+        <tr>
+            <td>Respecter les règles d'utilisation (RGPD, licences, .env)</td>
+            <td><textarea placeholder="À compléter"></textarea></td>
+            <td><textarea placeholder="À compléter"></textarea></td>
+        </tr>
+    </table>
+
+    <h2>Boîte noire — Questions sur votre vécu /6</h2>
+    <div class="form-group">
+        <h3>Question B1 /2</h3>
+        <p>Donnez l'URL complète de votre dépôt GitHub principal de ce semestre et indiquez le nom exact du fichier ou dossier qui représente le mieux votre travail.</p>
+        <label>URL :</label> <input type="text" value="github.com/">
+        <label>Fichier / dossier :</label> <input type="text">
+        <label>Explication (3-4 lignes) :</label> <textarea></textarea>
+    </div>
+
+    <div class="form-group">
+        <h3>Question B2 /2</h3>
+        <p>Décrivez une difficulté technique réelle que vous avez rencontrée pendant le semestre et expliquez comment vous l'avez résolue.</p>
+        <label>La difficulté rencontrée :</label> <textarea></textarea>
+        <label>Comment je l'ai résolue :</label> <textarea></textarea>
+        <label>Fichier / ligne concernée :</label> <input type="text">
+    </div>
+
+    <div class="form-group">
+        <h3>Question B3 /2</h3>
+        <p>Lors du semestre, vous avez produit des livrables liés à la sécurité ou à la conformité. Citez un livrable concret.</p>
+        <label>Le livrable :</label> <input type="text">
+        <label>Où le trouver sur GitHub :</label> <input type="text">
+        <label>À quoi il sert :</label> <textarea></textarea>
+    </div>
+
+    <h2>Partie 3 — Lettre de motivation technique /4</h2>
+    <div class="form-group">
+        <p>Rédigez une lettre de motivation pour postuler comme stagiaire BTS SIO SLAM chez DataNovA.
