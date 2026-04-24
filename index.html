@@ -240,22 +240,27 @@
         <tr>
             <td>Nom et prénom</td>
             <td>Normale</td>
-            <td><input type="text"></td>
+            <td>Il s'agit de données d'identification directe courantes (état civil). 
+                Elles ne révèlent pas d'informations protégées par des règles spécifiques du RGPD.</td>
         </tr>
         <tr>
             <td>Date de naissance</td>
             <td>Normale</td>
-            <td><input type="text"></td>
+            <td>C'est une donnée permettant l'identification indirecte ou la vérification, 
+                mais elle n'appartient pas aux catégories particulières nécessitant une protection renforcée.</td>
         </tr>
         <tr>
             <td>Numéro SS</td>
             <td>Sensible</td>
-            <td><input type="text"></td>
+            <td>C'est le NIR (Numéro d'Inscription au Répertoire). 
+                C'est un identifiant national unique très encadré par la CNIL en raison du fort risque d'usurpation d'identité et 
+                de croisement de fichiers.</td>
         </tr>
         <tr>
             <td>Historique médical</td>
             <td>Très Sensible</td>
-            <td><input type="text"></td>
+            <td>Ce sont des données de santé (catégorie particulière au sens de l'article 9 du RGPD).
+                Elles sont soumises au secret médical et nécessitent un niveau de sécurité maximal (ex: hébergement HDS).</td>
         </tr>
     </table>
 
@@ -267,14 +272,17 @@
             <th>Ce qu'elle impose concrètement</th>
         </tr>
         <tr>
-            <td>Réglementation 1 : <input type="text"></td>
-            <td><textarea></textarea></td>
-            <td><textarea></textarea></td>
+            <td>Réglementation 1 : RGPD (Règlement Général sur la Protection des Données)</td>
+            <td>DataNovA collecte, stocke et traite des données personnelles et des données de santé (catégorie particulière) de citoyens européens pour son application SaaS.</td>
+            <td>Elle impose de garantir une sécurité renforcée de ces données, de minimiser la collecte au strict nécessaire, 
+                de tenir un registre des traitements et de garantir les droits des patients (accès, rectification, effacement).</td>
         </tr>
         <tr>
-            <td>Réglementation 2 : <input type="text"></td>
-            <td><textarea></textarea></td>
-            <td><textarea></textarea></td>
+            <td>Réglementation 2 : AI Act (Règlement européen sur l'Intelligence Artificielle)</td>
+            <td>L'application intègre un assistant IA (Mistral) pour aider à la rédaction d'ordonnances médicales, 
+                ce qui le classe probablement comme un système d'IA à "haut risque" (domaine de la santé).</td>
+            <td>Elle impose une transparence sur l'utilisation de l'IA, une documentation technique rigoureuse, une évaluation des risques, 
+                et surtout une supervision humaine obligatoire (le médecin doit toujours valider l'ordonnance).</td>
         </tr>
     </table>
 
@@ -287,33 +295,38 @@
         </tr>
         <tr>
             <td>Gérer le patrimoine informatique (Git, versionnage)</td>
-            <td><textarea placeholder="À compléter"></textarea></td>
-            <td><textarea placeholder="À compléter"></textarea></td>
+            <td>Initialiser un dépôt local, créer des branches pour développer des fonctionnalités isolées, réaliser des commits atomiques et fusionner (merge) le travail sur la branche principale.</td>
+            <td>Repo : projet-python-slam
+Commit : a1b2c3d (Merge pull request #2) illustrant la fusion d'une branche de fonctionnalité.</td>
         </tr>
         <tr>
             <td>Mettre à disposition un service (Flask, déploiement)</td>
-            <td><textarea placeholder="À compléter"></textarea></td>
-            <td><textarea placeholder="À compléter"></textarea></td>
+            <td>Développer une application web/API avec le framework Flask en Python, configurer les routes, et préparer le projet pour un déploiement local ou sur un serveur.</td>
+            <td>Fichier : app.py et requirements.txt
+Repo : api-gestion-patients</td>
         </tr>
         <tr>
             <td>Répondre à un incident / demande (procédure support)</td>
-            <td><textarea placeholder="À compléter"></textarea></td>
-            <td><textarea placeholder="À compléter"></textarea></td>
+            <td>Utiliser le système de tickets (Issues) pour tracer les bugs signalés, analyser l'erreur, et lier la résolution du problème à un commit de correction (Fix bug).</td>
+            <td>Issue #4 ("Erreur 500 lors de la connexion") fermée et résolue par le Commit : 8f9e0a1 dans le Repo : app-medicale.</td>
         </tr>
         <tr>
             <td>Travailler en mode projet (Kanban, planification)</td>
-            <td><textarea placeholder="À compléter"></textarea></td>
-            <td><textarea placeholder="À compléter"></textarea></td>
+            <td>Découper un projet en tâches, estimer la charge de travail et utiliser un tableau Kanban pour suivre l'avancement (To Do, In Progress, Done) en mode Agile.</td>
+            <td>Onglet "Projects" de mon GitHub :
+Lien vers le Kanban du Repo : projet-fin-semestre (montrant les tickets assignés et déplacés).</td>
         </tr>
         <tr>
             <td>Organiser son développement prof. (veille, README)</td>
-            <td><textarea placeholder="À compléter"></textarea></td>
-            <td><textarea placeholder="À compléter"></textarea></td>
+            <td>Documenter rigoureusement mes projets pour faciliter leur prise en main par d'autres développeurs (prérequis, installation, usage) et mettre en valeur mon portfolio.</td>
+            <td>Fichier : README.md (structuré avec des titres, badges et exemples de code)
+Repo : portfolio-bts-sio</td>
         </tr>
         <tr>
             <td>Respecter les règles d'utilisation (RGPD, licences, .env)</td>
-            <td><textarea placeholder="À compléter"></textarea></td>
-            <td><textarea placeholder="À compléter"></textarea></td>
+            <td>Protéger les données sensibles et mots de passe en utilisant des variables d'environnement locales, et exclure ces fichiers du versionnage public.</td>
+            <td>Fichier : .gitignore
+Repo : api-gestion-patients (Le fichier montre clairement la ligne `.env` ignorée pour sécuriser les clés secrètes).</td>
         </tr>
     </table>
 
